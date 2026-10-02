@@ -1,3 +1,7 @@
+import os
+if os.path.exists("F:\\hf_cache"):
+    os.environ["HF_HOME"] = "F:\\hf_cache"
+
 import streamlit as st
 from urllib.parse import urlparse, parse_qs
 from youtube_transcript_api import YouTubeTranscriptApi
